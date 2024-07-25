@@ -30,29 +30,41 @@
         {
             button1 = new Button();
             textBox1 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(419, 192);
+            button1.Location = new Point(448, 97);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(116, 43);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Valider";
             button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(426, 148);
+            textBox1.Location = new Point(175, 117);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(192, 23);
             textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(50, 120);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Saisir votre texte";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Form1";
@@ -65,5 +77,6 @@
 
         private Button button1;
         private TextBox textBox1;
+        private Label label1;
     }
 }
